@@ -1,0 +1,13 @@
+class Solution(object):
+    def majorityElement(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        self.nums=list(nums)
+        m=sorted(self.nums)
+        n=len(self.nums)/2
+        for i in range(len(m)):
+            if m[i]==m[i+n]:
+                break
+        return m[i]
