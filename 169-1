@@ -7,7 +7,7 @@ class Solution(object):
         self.nums=list(nums)
         m=sorted(self.nums)
         n=len(self.nums)/2
-        for i in range(len(m)):
+        for i in xrange(len(m)):
             if m[i]==m[i+n]:
                 break
         return m[i]
